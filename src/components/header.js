@@ -12,8 +12,7 @@ class Header extends React.Component {
 
 
  handleClick = (e)=> {
-  
-  if (e.target.pathname === '/')
+  if (e.target.pathname === '/' || e.target.parentNode.pathname === '/' )
   this.setState( {
     activeLinks : ["active", "", ""]
    })
@@ -33,7 +32,7 @@ class Header extends React.Component {
    return (
       <div>
         <div className="wrapper">
-          <header><Link id="logo" to="/"><img src={headerImage} style={{width: '80%'}} /></Link>
+          <header><Link onClick={this.handleClick} id="logo" to="/"><img src={headerImage} style={{width: '80%'}} /></Link>
             <div className="headerlinks centered">
               <Link onClick={this.handleClick} className={this.state.activeLinks[2]} to="/materials" style={{float: 'right', fontSize: 17}}>MATERIALS</Link>
               <Link onClick={this.handleClick} to="/about" className={this.state.activeLinks[1]} style={{float: 'center', fontSize: 17}}>ABOUT US</Link>
