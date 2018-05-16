@@ -8,19 +8,22 @@ import Media from 'react-media'
 import Sidebar from '../components/sidebar'
 import Header from '../components/header'
 import './index.css'
+import favicon from './favicon.ico'
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet
-      title="Blog App"
+    <Helmet  title="Cyber Labs - Sessions"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
-      ]}
-      link={[
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' }
-      ]}
-    />
+      ]}>
+     
+      
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'  />
+            
+
+      <link rel='shortcut icon' type='image/x-icon' href={favicon} />    
+    </Helmet>
     <Header />
 
 

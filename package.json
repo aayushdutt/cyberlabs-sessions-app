@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-remark": "^1.7.41",
+    "image-exists": "^1.1.0",
     "react-helmet": "^5.2.0",
     "react-media": "^1.8.0"
   },

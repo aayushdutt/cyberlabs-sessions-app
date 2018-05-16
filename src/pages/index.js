@@ -7,8 +7,16 @@ import Event from '../components/event'
 export default function Index({ data }) {
 let  { edges: posts } = data.allMarkdownRemark;
 
+
 let eventList = posts.map((post) => {
-  return <Event />
+  let eventData = {
+    title:post.node.frontmatter.title, 
+    imageName:post.node.frontmatter.imageName, 
+    date:post.node.frontmatter.date, 
+    time:post.node.frontmatter.time, 
+    key: post.node.id
+  };
+  return <Event key ={eventData.key} eventData={eventData}/>
 })
   return (
   
@@ -36,6 +44,9 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            date
+            time
+            imageName
           }
         }
       }
