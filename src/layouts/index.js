@@ -7,7 +7,7 @@ import Media from 'react-media'
 
 import Sidebar from '../components/sidebar'
 import Header from '../components/header'
-import './index.css'
+import './index.min.css'
 import favicon from './favicon.ico'
 
 const Layout = ({ children, data }) => (
