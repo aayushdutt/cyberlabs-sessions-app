@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Link from 'gatsby-link'
-import Media from 'react-media'
 
-import Sidebar from '../components/sidebar'
 import Header from '../components/header'
 import './index.min.css'
 import favicon from './favicon.ico'
@@ -28,7 +26,7 @@ const Layout = ({ children, data }) => (
 
 
   
-  <section className="centered" style={{marginTop:100}}>{children()}</section>
+  <section className="centered" style={{marginTop:90}}>{children()}</section>
   
   
   
