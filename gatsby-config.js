@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Cyber Labs - Sessions`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

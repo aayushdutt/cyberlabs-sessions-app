@@ -14,8 +14,8 @@ const Layout = ({ children, data }) => (
   <div>
     <Helmet  title="Cyber Labs - Sessions"
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        { name: "description", content: "Cyberlabs' Official Sessions Schedule" },
+        { name: "keywords", content: "Cyberlabs, Cyber Labs, IIT Dhanbad, IIT (ISM), Dhanbad, Coding Club" }
       ]}>
      
       
