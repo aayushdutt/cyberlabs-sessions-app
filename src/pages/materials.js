@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 export default function Materials() {
   return (
   <div>
+    Coming Soon!
   </div>
   
   )
