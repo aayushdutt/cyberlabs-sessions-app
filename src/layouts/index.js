@@ -15,23 +15,12 @@ const Layout = ({ children, data }) => (
         { name: "description", content: "Cyberlabs' Official Sessions Schedule" },
         { name: "keywords", content: "Cyberlabs, Cyber Labs, IIT Dhanbad, IIT (ISM), Dhanbad, Coding Club" }
       ]}>
-     
-      
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'  />
-            
-
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'  />
       <link rel='shortcut icon' type='image/x-icon' href={favicon} />    
     </Helmet>
     <Header />
 
-
-  
-  <section className="centered" style={{marginTop:90}}>{children()}</section>
-  
-  
-  
-  
-  
+    <section className="centered" style={{marginTop:90}}>{children()}</section>
   </div>
 )
 
